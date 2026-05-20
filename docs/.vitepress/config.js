@@ -1,8 +1,11 @@
 import { defineConfig } from 'vitepress'
 
+const BASE = process.env.BASE_PATH || '/'
+
 export default defineConfig({
   title: 'AgentWiki',
   description: '深度学习到 LMM + Agent 落地知识库',
+  base: BASE,
 
   themeConfig: {
     logo: '🧠',
