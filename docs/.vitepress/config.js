@@ -78,7 +78,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com' }
+      { icon: 'github', link: 'https://github.com/1583477320/llmwiki' }
     ],
 
     footer: {

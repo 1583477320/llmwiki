@@ -14,7 +14,7 @@ hero:
       link: /01-deep-learning/nn-foundations
     - theme: alt
       text: GitHub
-      link: https://github.com
+      link: https://github.com/1583477320/llmwiki
 
 features:
   - icon: 🧬
