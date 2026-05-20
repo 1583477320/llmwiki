@@ -1,0 +1,68 @@
+:root {
+  --vp-c-brand-1: #3b82f6;
+  --vp-c-brand-2: #4f92f7;
+  --vp-c-brand-3: #2563eb;
+  --vp-c-brand-soft: rgba(59, 130, 246, 0.14);
+
+  --vp-button-brand-bg: #3b82f6;
+  --vp-button-brand-hover-bg: #2563eb;
+  --vp-button-brand-active-bg: #1d4ed8;
+  --vp-button-brand-text: #ffffff;
+
+  --vp-c-text-code: #3b82f6;
+  --vp-code-block-bg: #0d1117;
+  --vp-code-line-highlight-color: rgba(59, 130, 246, 0.08);
+  --vp-code-copy-code-hover-bg: rgba(59, 130, 246, 0.1);
+  --vp-code-copy-code-active-text: #3b82f6;
+}
+
+.dark {
+  --vp-c-brand-1: #60a5fa;
+  --vp-c-brand-2: #3b82f6;
+  --vp-c-brand-3: #2563eb;
+  --vp-c-brand-soft: rgba(59, 130, 246, 0.16);
+
+  --vp-button-brand-bg: #3b82f6;
+  --vp-button-brand-hover-bg: #2563eb;
+  --vp-button-brand-active-bg: #1d4ed8;
+}
+
+.VPHero .name {
+  background: linear-gradient(135deg, #a78bfa 0%, #3b82f6 50%, #2dd4bf 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.VPHero .text {
+  background: linear-gradient(135deg, #c4b5fd 0%, #60a5fa 50%, #5eead4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.VPHero .tagline {
+  color: var(--vp-c-text-2);
+}
+
+.VPFeature {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.VPFeature:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.12);
+}
+
+.vp-doc a {
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+}
+
+.vp-doc a:hover {
+  color: var(--vp-c-brand-2);
+}
+
+.custom-block.tip {
+  border-color: #3b82f6;
+}
