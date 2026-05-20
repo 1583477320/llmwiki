@@ -2,49 +2,49 @@
 layout: home
 
 hero:
-  name: AgentWiki
-  text: 深度演进到 LMM + Agent
-  tagline: 从神经网络基础到多模态 Agent 工程落地的系统化知识库
+  name: "AGENTWIKI"
+  text: "> Deep Learning → LMM → Agent"
+  tagline: "$ ssh agentwiki.internal — A systematic knowledge base for hardcore AI engineering."
   image:
     src: /logo.svg
     alt: AgentWiki
   actions:
     - theme: brand
-      text: 📖 开始系统学习
+      text: "./init --bootstrap"
       link: /01-deep-learning/nn-foundations
     - theme: alt
-      text: ⚡ GitHub
+      text: "git clone"
       link: https://github.com
 
 features:
   - icon: 🧬
-    title: 深度学习核心基础
-    details: 从反向传播与优化器本质出发，理解神经网络训练的数学直觉，掌握损失函数设计、梯度优化与正则化等核心概念。
+    title: "01 — Deep Learning Foundations"
+    details: "backpropagation · gradient descent · Adam optimizer · loss landscape · regularization · BatchNorm — the math that makes neural nets learn."
     link: /01-deep-learning/nn-foundations/
 
   - icon: 🔮
-    title: Transformer 架构与注意力
-    details: 深入拆解自注意力机制的数学原理、多头注意力的工程实现、位置编码的演进，以及 FlashAttention、GQA、MLA 等前沿注意力变体。
+    title: "02 — Transformer Architecture"
+    details: "self-attention · multi-head · RoPE · FlashAttention 1/2/3 · GQA/MQA/MLA · sparse attention · Mamba SSM — attention is all you need, optimized."
     link: /02-transformers/transformer-mechanics/
 
   - icon: 🤖
-    title: 大语言模型与多模态
-    details: 掌握 LLM Token 机制、Context 窗口与采样策略控制。理解 Vision Transformer 如何在嵌入空间完成跨模态对齐，实现图文统一建模。
+    title: "03 — LLM & Multimodal Models"
+    details: "tokenization · context window · temperature/top-p sampling · RLHF/DPO · CLIP alignment · ViT · cross-modal projection — from text to vision."
     link: /03-large-models/llm-core/
 
   - icon: 🧠
-    title: Agent 认知与编排系统
-    details: 构建 ReAct 感知-思考-行动状态机循环。基于 JSON Schema 强约束实现结构化 Tool Call，并设计多模态 RAG 驱动的长期记忆架构。
+    title: "04 — Agent Architecture & Orchestration"
+    details: "ReAct loop · plan-and-execute · multi-agent hierarchy · JSON Schema tool calling · RAG · memory systems · GraphRAG — cognitive architectures for autonomous agents."
     link: /04-agent-architectures/react-flow/
 
   - icon: 🚀
-    title: 主流 Agent 产品实战
-    details: 深入 Claude Code、Codex CLI、Aider、Cursor、OpenClaw 等主流 Agent 产品的架构原理、部署配置与使用技巧，掌握选型与落地能力。
+    title: "05 — Agent Products in Production"
+    details: "Claude Code · Codex CLI · Aider · Cursor · OpenClaw · Devin · Copilot — architecture deep dives, deployment configs, real-world usage patterns."
     link: /06-agent-products/overview/
 
   - icon: ⚙️
-    title: 生产环境工程落地
-    details: 深入 vLLM PagedAttention 推理优化与量化调优。实践 OpenClaw 桌面自动化的动作空间设计，以及 Agent 动作死循环的反思容错机制。
+    title: "06 — Inference & Engineering"
+    details: "vLLM · PagedAttention · AWQ/GPTQ quantization · speculative decoding · loop prevention · desktop automation safety — from prototype to production."
     link: /05-engineering-tools/vllm-inference/
 
 ---
