@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="256" y2="256">
+      <stop offset="0%" stop-color="#3451b2" />
+      <stop offset="100%" stop-color="#4e81eb" />
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="256" x2="256" y2="0">
+      <stop offset="0%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#3451b2" />
+    </linearGradient>
+  </defs>
+
+  <!-- 背景圆 -->
+  <circle cx="128" cy="128" r="120" fill="url(#g1)" opacity="0.08" />
+  <circle cx="128" cy="128" r="92" fill="url(#g1)" opacity="0.06" />
+
+  <!-- 连线 (神经网络边) -->
+  <line x1="128" y1="45"  x2="60"  y2="168" stroke="url(#g1)" stroke-width="3" opacity="0.5" />
+  <line x1="128" y1="45"  x2="196" y2="168" stroke="url(#g1)" stroke-width="3" opacity="0.5" />
+  <line x1="60"  y1="168" x2="196" y2="168" stroke="url(#g2)" stroke-width="3" opacity="0.5" />
+
+  <!-- 连线 (外围) -->
+  <line x1="60"  y1="168" x2="128" y2="82" stroke="url(#g1)" stroke-width="2" opacity="0.25" />
+  <line x1="196" y1="168" x2="128" y2="82" stroke="url(#g2)" stroke-width="2" opacity="0.25" />
+
+  <!-- 顶部节点 -->
+  <circle cx="128" cy="45" r="18" fill="url(#g1)" />
+  <circle cx="128" cy="45" r="13" fill="none" stroke="#fff" stroke-width="2" opacity="0.4" />
+  <text x="128" y="51" text-anchor="middle" fill="#fff" font-family="monospace" font-size="14" font-weight="700">A</text>
+
+  <!-- 左下节点 -->
+  <circle cx="60" cy="168" r="18" fill="url(#g2)" />
+  <circle cx="60" cy="168" r="13" fill="none" stroke="#fff" stroke-width="2" opacity="0.4" />
+  <text x="60" y="174" text-anchor="middle" fill="#fff" font-family="monospace" font-size="13" font-weight="700">W</text>
+
+  <!-- 右下节点 -->
+  <circle cx="196" cy="168" r="18" fill="url(#g1)" />
+  <circle cx="196" cy="168" r="13" fill="none" stroke="#fff" stroke-width="2" opacity="0.4" />
+  <text x="196" y="174" text-anchor="middle" fill="#fff" font-family="monospace" font-size="13" font-weight="700">W</text>
+
+  <!-- 中心小脉冲节点 -->
+  <circle cx="128" cy="82" r="6" fill="url(#g2)" opacity="0.7" />
+  <circle cx="128" cy="32" r="4" fill="url(#g1)" opacity="0.4" />
+  <circle cx="47" cy="155" r="4" fill="url(#g1)" opacity="0.3" />
+  <circle cx="209" cy="155" r="4" fill="url(#g2)" opacity="0.3" />
+
+  <!-- 外围数据流弧线 -->
+  <path d="M 128 24 A 112 112 0 0 1 232 128"
+        stroke="url(#g1)" stroke-width="2" fill="none" opacity="0.3" stroke-dasharray="8 6" />
+  <path d="M 232 128 A 112 112 0 0 1 128 232"
+        stroke="url(#g2)" stroke-width="2" fill="none" opacity="0.2" stroke-dasharray="8 6" />
+</svg>
