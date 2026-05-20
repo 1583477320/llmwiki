@@ -1,135 +1,32 @@
-/* ===== 首页 Hero 区域 ===== */
-
-.VPHero {
-  position: relative;
-  overflow: hidden;
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, #3451b2 30%, #4e81eb);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #3451b2 50%, #4e81eb 50%);
+  --vp-home-hero-image-filter: blur(44px);
 }
 
-.VPHero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0, 229, 255, 0.08), transparent),
-    radial-gradient(ellipse 60% 40% at 80% 80%, rgba(124, 58, 237, 0.06), transparent);
-  pointer-events: none;
+/* Hero 名称渐变色 */
+@media (min-width: 640px) {
+  :root {
+    --vp-home-hero-image-filter: blur(56px);
+  }
 }
 
-.VPHero .name {
-  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  background: linear-gradient(135deg, #00e5ff 0%, #7c3aed 40%, #f472b6 70%, #00e5ff 100%);
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradientShift 4s ease-in-out infinite;
-  filter: drop-shadow(0 0 20px rgba(0, 229, 255, 0.3));
+@media (min-width: 960px) {
+  :root {
+    --vp-home-hero-image-filter: blur(68px);
+  }
 }
 
-.VPHero .text {
-  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
-  background: linear-gradient(135deg, #a78bfa 0%, #22d3ee 50%, #a78bfa 100%);
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradientShift 5s ease-in-out infinite reverse;
-}
-
-.VPHero .tagline {
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
-  color: #8b9dc3;
-  font-size: 1rem;
-  border-right: 2px solid #00e5ff;
-  display: inline-block;
-  padding-right: 4px;
-  animation: cursorBlink 1s step-end infinite;
-  max-width: fit-content;
-  margin: 0 auto;
-}
-
-@keyframes gradientShift {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-}
-
-@keyframes cursorBlink {
-  0%, 100% { border-color: #00e5ff; }
-  50% { border-color: transparent; }
-}
-
-/* ===== 首页按钮 ===== */
-
-.VPHero .actions .action .VPButton.brand {
-  background: linear-gradient(135deg, #0a0a0f, #0a0a0f) padding-box,
-              linear-gradient(135deg, #00e5ff, #7c3aed) border-box;
-  border: 1px solid transparent;
-  color: #00e5ff;
-  text-shadow: 0 0 8px rgba(0, 229, 255, 0.4);
-  transition: all 0.3s ease;
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
-}
-
-.VPHero .actions .action .VPButton.brand:hover {
-  box-shadow: 0 0 24px rgba(0, 229, 255, 0.3), inset 0 0 24px rgba(0, 229, 255, 0.05);
-  color: #fff;
-  text-shadow: 0 0 12px rgba(0, 229, 255, 0.6);
-}
-
-.VPHero .actions .action .VPButton.alt {
-  border-color: #1e1e3a;
-  color: #8b9dc3;
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
-}
-
-.VPHero .actions .action .VPButton.alt:hover {
-  border-color: #7c3aed;
-  color: #c4b5fd;
-  box-shadow: 0 0 16px rgba(124, 58, 237, 0.2);
-}
-
-/* ===== 首页 Feature 卡片 ===== */
-
+/* Feature 卡片微调 */
 .VPFeature {
-  background: #0f0f1a;
-  border: 1px solid #1e1e3a;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.VPFeature::after {
-  content: '';
-  position: absolute;
-  inset: -1px;
-  border-radius: 9px;
-  background: linear-gradient(135deg, #00e5ff, #7c3aed);
-  opacity: 0;
-  z-index: -1;
-  transition: opacity 0.3s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .VPFeature:hover {
-  transform: translateY(-3px);
-  border-color: transparent;
-  box-shadow: 0 0 32px rgba(0, 229, 255, 0.12), 0 8px 24px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
 }
 
-.VPFeature:hover::after {
-  opacity: 0.4;
-}
-
-.VPFeature .icon {
-  filter: drop-shadow(0 0 6px rgba(0, 229, 255, 0.3));
-}
-
-.VPFeature .title {
-  color: #e2e8f0;
-  font-weight: 700;
-}
-
-.VPFeature .details {
-  color: #64748b;
+.vp-doc .VPFeatures + * {
+  margin-top: 0;
 }
