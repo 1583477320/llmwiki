@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import mathjax3 from 'markdown-it-mathjax3'
 
 const BASE = process.env.BASE_PATH || '/'
 
@@ -98,6 +99,9 @@ export default defineConfig({
   },
 
   markdown: {
-    lineNumbers: true
+    lineNumbers: true,
+    config: (md) => {
+      md.use(mathjax3)
+    }
   }
 })
