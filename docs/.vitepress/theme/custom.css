@@ -1,43 +1,4 @@
-:root {
-  --vp-c-brand-1: #00e5ff;
-  --vp-c-brand-2: #00b8d4;
-  --vp-c-brand-3: #0097a7;
-  --vp-c-brand-soft: rgba(0, 229, 255, 0.12);
-
-  --vp-button-brand-bg: #00e5ff;
-  --vp-button-brand-hover-bg: #00b8d4;
-  --vp-button-brand-active-bg: #0097a7;
-  --vp-button-brand-text: #0a0a0f;
-  --vp-button-brand-border: #00e5ff;
-
-  --vp-c-text-code: #00e5ff;
-  --vp-code-block-bg: #0a0a0f;
-  --vp-code-line-highlight-color: rgba(0, 229, 255, 0.08);
-  --vp-code-copy-code-hover-bg: rgba(0, 229, 255, 0.1);
-  --vp-code-copy-code-active-text: #00e5ff;
-
-  --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: linear-gradient(135deg, #00e5ff 0%, #7c3aed 50%, #f472b6 100%);
-  --vp-c-bg: #0a0a0f;
-  --vp-c-bg-soft: #0f0f1a;
-  --vp-c-bg-alt: #12121f;
-  --vp-c-bg-elv: #161628;
-  --vp-c-border: #1e1e3a;
-  --vp-c-divider: #1e1e3a;
-  --vp-c-gutter: #0f0f1a;
-}
-
-.dark {
-  --vp-c-brand-1: #00e5ff;
-  --vp-c-brand-2: #00b8d4;
-  --vp-c-brand-3: #0097a7;
-  --vp-c-brand-soft: rgba(0, 229, 255, 0.16);
-  --vp-c-bg: #0a0a0f;
-  --vp-c-bg-soft: #0f0f1a;
-  --vp-c-bg-alt: #12121f;
-}
-
-/* ===== Hero 区域 ===== */
+/* ===== 首页 Hero 区域 ===== */
 
 .VPHero {
   position: relative;
@@ -54,10 +15,6 @@
   pointer-events: none;
 }
 
-.VPHero .container {
-  position: relative;
-}
-
 .VPHero .name {
   font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
   font-weight: 800;
@@ -68,7 +25,6 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradientShift 4s ease-in-out infinite;
-  text-shadow: none;
   filter: drop-shadow(0 0 20px rgba(0, 229, 255, 0.3));
 }
 
@@ -104,7 +60,7 @@
   50% { border-color: transparent; }
 }
 
-/* ===== 按钮 ===== */
+/* ===== 首页按钮 ===== */
 
 .VPHero .actions .action .VPButton.brand {
   background: linear-gradient(135deg, #0a0a0f, #0a0a0f) padding-box,
@@ -134,7 +90,7 @@
   box-shadow: 0 0 16px rgba(124, 58, 237, 0.2);
 }
 
-/* ===== Feature 卡片 ===== */
+/* ===== 首页 Feature 卡片 ===== */
 
 .VPFeature {
   background: #0f0f1a;
@@ -176,61 +132,4 @@
 
 .VPFeature .details {
   color: #64748b;
-}
-
-/* ===== VPDoc 内容页 ===== */
-
-.vp-doc h1 {
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
-  background: linear-gradient(135deg, #00e5ff, #7c3aed);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.vp-doc h2 {
-  border-left: 3px solid #00e5ff;
-  padding-left: 12px;
-}
-
-.vp-doc a {
-  color: #00e5ff;
-}
-
-.vp-doc a:hover {
-  color: #22d3ee;
-}
-
-.vp-doc code {
-  color: #00e5ff;
-  background: rgba(0, 229, 255, 0.08);
-  border-radius: 3px;
-  padding: 2px 6px;
-  font-size: 0.9em;
-}
-
-.custom-block.tip {
-  border-color: #00e5ff;
-  background: rgba(0, 229, 255, 0.04);
-}
-
-.custom-block.info {
-  border-color: #7c3aed;
-  background: rgba(124, 58, 237, 0.04);
-}
-
-/* ===== 侧边栏 ===== */
-
-.VPSidebarItem .item .link.active {
-  color: #00e5ff;
-}
-
-.VPSidebarItem .item .link:hover {
-  color: #22d3ee;
-}
-
-/* ===== 顶部导航 ===== */
-
-.VPNavBarTitle .title {
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
 }
