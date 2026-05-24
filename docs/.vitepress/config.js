@@ -33,7 +33,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'Transformer 架构详解', link: '/02-transformers/transformer-mechanics' },
-          { text: 'Transformer 分类与注意力机制', link: '/02-transformers/transformer-taxonomy' }
+          { text: 'Transformer 分类与注意力机制', link: '/02-transformers/transformer-taxonomy' },
 	  { text: '位置编码', link: '/02-transformers/transformer-local' }
         ]
       },
